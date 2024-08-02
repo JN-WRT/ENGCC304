@@ -1,0 +1,112 @@
+/*If else*/
+#include <stdio.h>
+
+int main() {
+    int score = 0 ;
+    printf("Enter score : ") ;
+    if (scanf( "%d", &score ) != 1) {
+        printf( "Enter number only." ) ;
+        return 1 ;
+    }
+
+    if( score >= 80 ) {
+        printf( "A !" ) ;
+    } else if( score >= 75 && score < 80 ) {
+        printf( "B+ !" ) ;
+    } else if( score >= 70 && score < 75 ) {
+        printf( "B !" ) ;
+    } else if( score >= 65 && score < 70 ) {
+        printf( "C+ !" ) ;
+    } else if( score >= 60 && score < 65 ) {
+        printf( "C !" ) ;
+    } else if( score >= 55 && score < 60 ) {
+        printf( "D+ !" ) ;
+    } else if( score >= 50 && score < 55 ) {
+        printf( "D !" ) ;
+    } else {
+        printf( "F !" ) ;
+    }//end if
+
+    return 0 ;
+}//end main function
+
+
+
+
+
+/*Switch*/
+#include <stdio.h>
+
+int main () {
+    int score ;
+    printf( "Please Enter Score : " ) ;
+    if(scanf( "%d", &score ) != 1){
+        printf( "Please Enter Number Only." ) ;
+        return 1 ;
+    }
+
+    switch (score / 5) {
+    case 20 :
+        printf( "A!" ) ;
+    break ;
+    case 18 :
+        printf( "A!" ) ;
+    break ;
+    case 16 :
+        printf( "A!" ) ;
+    break ;
+    case 15 :
+        printf( "B+!" ) ;
+    break ;
+    case 14 :
+        printf( "B!" ) ;
+    break ;
+    case 13 :
+        printf( "C+!" ) ;
+    break ;
+    case 12 :
+        printf( "C!" ) ;
+    break ;
+    case 11 :
+        printf( "D+!" ) ;
+    break ;
+    case 10 :
+        printf( "D!" ) ;
+    break ;
+    case 9 :
+        printf( "F!" ) ;
+    break ;
+    case 8 :
+        printf( "F!" ) ;
+    break ;
+    case 7 :
+        printf( "F!" ) ;
+    break ;
+    case 6 :
+        printf( "F!" ) ;
+    break ;
+    case 5 :
+        printf( "F!" ) ;
+    break ;
+    case 4 :
+        printf( "F!" ) ;
+    break ;
+    case 3 :
+        printf( "F!" ) ;
+    break ;
+    case 2 :
+        printf( "F!" ) ;
+    break ;
+    case 1 :
+        printf( "F!" ) ;
+    break ;
+    case 0 :
+        printf( "F!" ) ;
+    break ;
+
+    default :
+        printf( "Please Enter Number Only" ) ;
+    break ;
+    }
+return 0 ;
+}//end main function
